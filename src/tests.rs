@@ -18,6 +18,7 @@ fn test_initialize() {
     let instruction: Instruction = InitializeInstruction {
         payer: Address::from(payer.to_bytes()),
         system_program: Address::from(quasar_svm::system_program::ID.to_bytes()),
+        pair: "1234".to_string().into()
     }
     .into();
 
